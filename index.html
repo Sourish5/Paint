@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paint</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <style>
+            body
+            {
+                text-align:center;
+                background-image:url("download.png");
+            }
+            #myCanvas
+            {
+                background-color:white;
+                background-position: center;
+    background-size: cover;
+            }
+            .span
+            {
+                color:white;
+            }
+            #radius_value,#color_value,#width_value
+            {
+                color:black;
+            }
+        </style>
+        <h2 style="color:pink">Paint</h2>
+        <br><br>
+        <canvas id="myCanvas"height="600"width="800"></canvas>
+        <br><br>
+        <span class="span">Radius-<input id="radius_value" type="number"></span>
+        <span class="span">Color-<input id="color_value" type="text"></span>
+        <span class="span">Width-<input id="width_value" type="number"></span>
+        <br><br>
+        <button type="button" id="clear" onclick="clearArea()">Clear Canvas</button>
+    </body>
+    <script src="main.js"></script>
+</html>
